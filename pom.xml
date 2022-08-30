@@ -5,6 +5,7 @@
 	<artifactId>expense</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
@@ -20,7 +21,19 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<finalName>expense</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>7</release>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>
